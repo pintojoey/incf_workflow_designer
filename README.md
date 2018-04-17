@@ -18,3 +18,7 @@ SVM: A simple SVM classifier implementation with modifiable attributes, 2 inputs
 Model: An SVM training model stored in a file
 Output: Indicates the overall output of the system
 Complex signal processing routines may be represented in a similar flow pattern by having multiple blocks with defined inputs and outputs. The prototype implementation in javascript can validate input types, annotate edges and provides a data structure that can easily be used to add custom conditions or input validation techniques.
+
+## Running the code
+
+Host the project on any http server like Apache, XAMPP, LAMPP in the htdocs folder and access index.html
