@@ -1,6 +1,6 @@
 blocks.register({
     name: "Stream",
-    family: "Input",
+    family: "Data Providers",
     description: "This is a standard output",
     fields: [
         {

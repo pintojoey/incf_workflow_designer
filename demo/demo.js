@@ -5,10 +5,15 @@
     
     blocks = new Blocks();
 	//<--WIP-->
-	include('input/input.js');
-	include('input/stream.js');
-	include('input/lab_streaming_layer.js');
-	include('signals/wavelet_transform.js');
+	include('data_providers/offline_data.js');
+	include('data_providers/stream.js');
+    include('data_providers/lab_streaming_layer.js');
+    include('segmentation/epoch_extraction.js');
+    include('pre_processing/baseline_correction.js');
+    include('pre_processing/channel_selection.js')
+    include('pre_processing/bandpass_filtering.js')
+    include('pre_processing/averaging.js')
+    include('signals/wavelet_transform.js');
 	include('signals/ICA.js');
 	include('signals/matching_pursuit.js');
 	include('feature_extraction/segmentation.js');

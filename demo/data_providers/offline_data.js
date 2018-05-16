@@ -1,25 +1,25 @@
 blocks.register({
-    name: "UserInput",
-    family: "Input",
-    description: "This is a String user input",
+    name: "Offline Data",
+    family: "Data Providers",
+    description: "Provide Data from an offline datasource",
     fields: [
         {
-            name: "Value",
+            name: "File",
             type: "String",
-            defaultValue: 0,
+            defaultValue: "",
             attrs: "editable inpût"
         },
 		{
-            name: "Label",
+            name: "Format",
             attrs: "editable",
             type: "string",
-			defaultValue: "input label"
+			defaultValue: "EEG file"
         },
         {
             card: "0-1",
-            name: "Value",
+            name: "Data",
             attrs: "output",
-			type: "string"
+			type: "data"
         }
     ]
 });

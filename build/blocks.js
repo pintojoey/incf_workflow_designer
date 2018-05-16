@@ -2173,7 +2173,7 @@ Blocks.prototype.run = function(selector)
             }   
 
             // "del" will delete a selected link
-            if (e.keyCode == 46) {
+            if (e.keyCode == 46 || e.keyCode == 8) {
                 self.deleteEvent();
             }
         });

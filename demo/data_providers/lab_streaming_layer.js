@@ -1,6 +1,6 @@
 blocks.register({
     name: "LabStreamingLayer",
-    family: "Input",
+    family: "Data Providers",
     description: "LAB STREAMING LAYER",
     fields: [
         {
