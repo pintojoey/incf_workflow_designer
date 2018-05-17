@@ -2247,7 +2247,6 @@ Blocks.prototype.addBlock = function(name, x, y)
 {
     for (var k in this.metas) {
         var type = this.metas[k];
-
         if (type.name == name) {
             var block = new Block(this, this.metas[k], this.id);
             block.x = x;
@@ -2722,10 +2721,13 @@ Blocks.prototype.perfectScale = function()
             yMax = Math.max(yMax, block.y+115);
         }
     }
+    
     var scaleA = this.div.width()/(xMax-xMin);
     var scaleB = this.div.height()/(yMax-yMin);
     var scale = Math.min(scaleA, scaleB);
-
+    if(xMin == null) {
+        scale=1;
+    }
     this.scale = scale;
     this.center.x = this.div.width()/2 - scale*(xMin+xMax)/2.0;
     this.center.y = this.div.height()/2 - scale*(yMin+yMax)/2.0;
